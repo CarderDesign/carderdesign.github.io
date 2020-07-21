@@ -84,10 +84,9 @@ p {
 @media all and (max-width: 767px) {
 	.bg-watermelon .item-col-2:nth-child(1) { order: 2; }
 	.bg-watermelon .item-col-2:nth-child(2) { order: 1; }
-	.bg-blueberry      .item-col-2:nth-child(1) { order: 2; }
-	.bg-blueberry      .item-col-2:nth-child(2) { order: 1; }
+	.bg-blueberry  .item-col-2:nth-child(1) { order: 2; }
+	.bg-blueberry  .item-col-2:nth-child(2) { order: 1; }
   }
-}
 
 
 
