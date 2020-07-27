@@ -5,19 +5,44 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>Smooth Smoothies | IBAT Web Design Portfolio Project | Mary Smith</title>
+	<title>Smooth Smoothies | IBAT Web Design Portfolio Project | Neil Carder</title>
+
+	<meta name="author" content="Neil Carder">
 
 	<meta name="description" content="Dublin's finest smoothie store. Offering tasty alternatives to sugary and unhealthy snacks for busy, on-the-go, on-trend professionals.">
 
+	<!-- CSS Only  -->
 	<link href="assets/css/style.css" rel="stylesheet">
+
+	<!-- Styles for Cookie Consent Popup Message  -->
+	<link href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" rel="stylesheet">
 
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Neucha&display=swap" rel="stylesheet">
 
+	<!-- Link to icons for Font Awesome 5 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169251944-1"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+  
+	gtag('config', 'UA-169251944-1');
+	</script>
+
 </head>
 
-
 <body>
+
+	<!-- Begin hero block -->
+	<div class="container-hero">
+		<h1>Smooth Smoothies</h1>
+		<h2>Where flavour meets goodness</h2>
+	</div>
+	<!-- End hero block -->
 
 	<section class="container-block">
 		<h2>Our world-class smoothies are great at any time of the day and offer a tasty alternative to sugary and unhealthy snacks!</h2>
@@ -74,6 +99,50 @@
         </div>
 		
 	</section>
+	
+	<!-- =============== BEGIN EMAIL SIGN UP FORM HTML ============= -->
+	<!-- Begin container for email signup form -->
+	<div class="container-form-email-signup">
+
+		<h3>Join our email list</h3>
+		<p>Keep me up-to-date with your latest healthy smoothie recipes and special offers.</p>  
+
+        <!-- Form begins here -->
+		<form id="email-signup-form" name="email-signup-form" accept-charset="utf-8"  method="post" action="https://formspree.io/carderna@gmail.com">
+
+			<!-- Begin email sign up form fields -->
+			
+			<div class="flex-row">
+				<label for="email-address">Email:</label>
+                <input type="text" id="email-address" name="email-address" placeholder="Your email address" maxlength="80" autocapitalize="none" required>
+                <input type="hidden" name="_subject" id="email-subject" value="Email Signup Form Submission">
+				<button id="btn-submit" type="submit" class="btn-submit">Subscribe <i class="fas fa-envelope"></i></button> 
+			</div>
+
+			<!-- End email sign up form fields -->
+		</form>
+        <!-- Form ends here -->
+    </div>
+	<!-- End container for email signup form -->
+	<!-- =============== END EMAIL SIGN UP FORM HTML ============= -->
+
+	<!-- JavaScript for Cookie Consent Popup Message -->
+	<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+	<script>
+	window.cookieconsent.initialise({
+	  	"palette": {
+			"popup": {
+				"background": "#000"
+			},
+			"button": {
+				"background": "#f1d600"
+			}
+		},
+	  	"content": {
+			"href": "privacy.html"
+		}
+	});
+	</script>
 
 </body>
 </html>
