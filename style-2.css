@@ -1,9 +1,28 @@
+/* ==== PAGE WIDTH  ==== */
+
+/* Desktop */
+@media all and (min-width: 768px) {
+    body {
+       padding-left: 20%;
+       padding-right: 20%
+    }
+}
+
+/* Mobiles */
+@media all and (max-width: 767px) {
+    body {
+       padding-left: 5%;
+       padding-right: 5%
+    }
+}
+
 body{
     background-color: antiquewhite;
     padding-left: 20%;
     padding-right: 20%;
     padding-bottom: 32px;
 }
+
 h1 {
     font-size: 72px;
     text-align: center;

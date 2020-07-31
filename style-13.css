@@ -1,9 +1,3 @@
-/*  ============= WEB BROWSER RESETS ============ */
-* { margin: 0; padding: 0; border: 0; box-sizing: border-box }
-html { height: 100% }
-body { min-height: 100% }  
-img { width: 100%; height: auto; min-width: 320px; max-width: 1600px; display: block }
-
 /* Container for web page blocks */
 /* Desktops */
 @media all and (min-width:768px) { .container-block { padding: 4% 12% } }
@@ -99,8 +93,7 @@ img { width: 100%; height: auto; min-width: 320px; max-width: 1600px; display: b
 @media all and (max-width:768px) { 
     .container-flexbox .item-col-3 p { calc(17px + (21 - 17) * ((100vw - 320px) / (1600 - 320))); } }
 
-
-    /* Flexbox four-column layout */
+/* Flexbox four-column layout */
 /* Desktops */
 @media all and (min-width:768px) { .item-col-4{ width: 19%; } }
 
