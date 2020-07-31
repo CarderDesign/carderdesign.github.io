@@ -1,11 +1,13 @@
-/* ==== WEB BROWSER RESETS  ==== */
+/* ==== BROWSER RESETS  ==== */
 * { box-sizing: border-box; padding: 0; margin: 0 }
 body, html { height: 100% }
-body { max-width: 1600px }
+body { max-width: 1600px; font-family: sans-serif }
 img { width: 100%; height: auto; display: block }
-html { scroll-behavior: smooth; scroll-padding-top: 72px;}
+* { margin:0; padding:0; box-sizing: border-box }
+html {scroll-behavior: smooth; scroll-padding-top: 72px;}
 
-/* =========== STYLES FOR HERO CONTAINER AT TOP OF WEB PAGE ========== */
+/* ======================================== FONT ============================== */
+body { font-family: 'Roboto', sans-serif; background: #f5f5f5; }
 
 /* Begin menu styles */
 
@@ -47,15 +49,15 @@ html { scroll-behavior: smooth; scroll-padding-top: 72px;}
     -webkit-background-clip: padding-box;
     -moz-background-clip: padding;
     background-clip: padding-box;
- }
+}
  
- .sticky-anchor:before {
+.sticky-anchor:before {
     content: "";
     position: absolute;
     top: -2px;
     left: 0;
     right: 0;
- }
+}
  
 /* Height of desktop menu and mobile menu bar */
 .container-menu-desktop, .container-menu-bar-mobile { height:72px }
@@ -102,6 +104,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 72px;}
 .menu-drop-shadow { box-shadow: 0 1px 10px #888 }
 
 /* ======= DESKTOP MENU ======= */
+
 /* outer parent flexbox container 
    home page link (with website logo) at left and ul links at right are its two children */
 .container-menu-desktop {
@@ -240,7 +243,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 72px;}
 .flyout-menu div.fly-out-social-icons {
     display:flex;
     flex-direction: row;
-	justify-content: space-between;
+    justify-content: space-between;    
 }
 
 .flyout-menu div.fly-out-profile-box img,
@@ -267,6 +270,7 @@ html { scroll-behavior: smooth; scroll-padding-top: 72px;}
 }
 
 /* ========= Light background menu - desktops and mobiles ========= */
+
 /* background colour */
 .menu-light { 
 	background-color: #fff;
@@ -274,44 +278,44 @@ html { scroll-behavior: smooth; scroll-padding-top: 72px;}
 }
 
 /* menu links */
-.menu-light ul li a:link,  .menu-light ul li a:visited { color: #d1274b }
+.menu-light ul li a:link,  .menu-light ul li a:visited { color: #5ba745 }
 .menu-light ul li a:hover, .menu-light ul li a:active  { color: #222 }
 
 /* cta button */
 .menu-light ul li a.btn-cta:link, 
 .menu-light ul li a.btn-cta:visited {
     background-color: transparent;
-    color: #d1274b;
-    border-color:#d1274b
+    color: #5ba745;
+    border-color:#5ba745
 }
 
 .menu-light ul li a.btn-cta:hover,
 .menu-light ul li a.btn-cta:active {
-    background-color: #d1274b;
+    background-color: #5ba745;
     color: #fff;
-    border-color:#d1274b
+    border-color:#5ba745
 }
 
 /* on mobiles only */
-.menu-light.flyout-menu hr { background-color: #d1274b; border-color: #d1274b } 
+.menu-light.flyout-menu hr { background-color: #5ba745; border-color: #5ba745 } 
 
 .menu-light.flyout-menu h4,
 .menu-light.flyout-menu h5,
 .menu-light.flyout-menu h5 a, 
-.menu-light.flyout-menu p { color: #d1274b } 
+.menu-light.flyout-menu p { color: #5ba745 } 
 
 /* colour of hamburger icon bars */
 .menu-light .item-icon .bar1, 
 .menu-light .item-icon .bar2, 
-.menu-light .item-icon .bar3 { background-color: #fff }	
+.menu-light .item-icon .bar3 { background-color: #5ba745 }	
 
 /* phone number link */
-a[href^=tel] { text-decoration: none; color: #d1274b }
+a[href^=tel] { text-decoration: none; color: #5ba745 }
 
 /* email link */
 .menu-light.flyout-menu h5 a:link, 
 .menu-light.flyout-menu h5 a:visited {
-    border-bottom-color:#d1274b;
+    border-bottom-color:#5ba745;
 }
 
 .menu-light.flyout-menu h5 a:hover, 
@@ -320,19 +324,17 @@ a[href^=tel] { text-decoration: none; color: #d1274b }
 }
 
 /* profile image border colour */
-.menu-light.flyout-menu div.fly-out-profile-box img { border-color: #d1274b }
+.menu-light.flyout-menu div.fly-out-profile-box img { border-color: #5ba745 }
 
 /* contact icons */
-.menu-light.flyout-menu .fly-out-social-icons a i { color:#d1274b }
+.menu-light.flyout-menu .fly-out-social-icons a i { color:#5ba745 }
 
 /* === End light background menu === */
-
-
 
 /* ======= Dark background menu - desktops and mobiles ======= */
 /* background colour */
 .menu-dark { 
-	background-color: #d1274b; 
+	background-color: #5ba745; 
 	transition: all .5s ease-in-out
 }
 
@@ -343,7 +345,7 @@ a[href^=tel] { text-decoration: none; color: #d1274b }
 /* cta button */
 .menu-dark ul li a.btn-cta:link,
 .menu-dark ul li a.btn-cta:visited { 
-    background-color: #d1274b;
+    background-color: #5ba745;
     color: #fff;
     border-color:#fff
 }
@@ -351,7 +353,7 @@ a[href^=tel] { text-decoration: none; color: #d1274b }
 .menu-dark ul li a.btn-cta:hover,
 .menu-dark ul li a.btn-cta:active { 
     background-color: #fff;
-    color: #d1274b;
+    color: #5ba745;
     border-color:#fff
 }
 
@@ -379,11 +381,11 @@ a[href^=tel] { text-decoration: none; color: #fff }
 
 .menu-dark.flyout-menu h5 a:hover, 
 .menu-dark.flyout-menu h5 a:active {
-    border-bottom-color: #d1274b;
+    border-bottom-color: #5ba745;
 }
 
 /* profile image border colour */
-.menu-dark.flyout-menu div.fly-out-profile-box img { border-color: #d1274b }
+.menu-dark.flyout-menu div.fly-out-profile-box img { border-color: #5ba745 }
 
 /* contact icons */
 .menu-dark.flyout-menu .fly-out-social-icons a i { color:#fff }
@@ -404,16 +406,16 @@ a[href^=tel] { text-decoration: none; color: #fff }
 /* cta button */
 .menu-transparent ul li a.btn-cta:link,
 .menu-transparent ul li a.btn-cta:visited { 
-    background-color: #d1274b;
+    background-color: #5ba745;
     color: #fff;
-    border-color:#d1274b;
+    border-color:#5ba745;
 }
 
 .menu-transparent ul li a.btn-cta:hover,
 .menu-transparent ul li a.btn-cta:active { 
     background-color: #fff;
-    color: #d1274b;
-    border-color:#d1274b
+    color: #5ba745;
+    border-color:#5ba745
 }
 
 /* on mobiles only - various content */
@@ -427,7 +429,7 @@ a[href^=tel] { text-decoration: none; color: #fff }
 /* colour of hamburger icon bars */
 .menu-transparent .item-icon .bar1, 
 .menu-transparent .item-icon .bar2, 
-.menu-transparent .item-icon .bar3 { background-color: #d1274b }
+.menu-transparent .item-icon .bar3 { background-color: #5ba745 }
 
 /* phone number link */
 a[href^=tel] { text-decoration: none; color: #fff }
@@ -440,156 +442,288 @@ a[href^=tel] { text-decoration: none; color: #fff }
 
 .menu-transparent.flyout-menu h5 a:hover, 
 .menu-transparent.flyout-menu h5 a:active {
-    border-bottom-color: #d1274b;
+    border-bottom-color: #5ba745;
 }
 
 /* profile image border colour */
-.menu-transparent.flyout-menu div.fly-out-profile-box img { border-color: #d1274b }
+.menu-transparent.flyout-menu div.fly-out-profile-box img { border-color: #5ba745 }
 
 /* contact icons */
 .menu-transparent.flyout-menu .fly-out-social-icons a i { color:#fff }
 
 /* === End transparent background menu === */
 
-.container-hero {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.2)), url('../img/smoothie-hero-image.jpg');
-	background-position: center center;
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-
-.container-hero h1, 
-.container-hero h2 {
-	font-family: 'Neucha', sans-serif;
-	color: #fff;
-	text-shadow: 2px 2px #222;
-	text-align: center;	
-}
-
-.container-hero h1 {
-	font-size: calc(58px + (132 - 58) * ((100vw - 320px)/(1600 - 320)));
-	line-height: 1.1
-}
-
-.container-hero h2 {
-	font-size: calc(26px + (64 - 26) * ((100vw - 320px)/(1600 - 320)));
-	line-height: 1.3	
-}
-
-/* Desktops - container height and h1 bottom margin */
-@media all and (min-width:768px) { 
-	.container-hero { height: 100% }
-	.container-hero h1 { margin-top: 3%; margin-bottom: 1% }
-}
-
-/* Mobiles - container height, text width and h1 bottom margin */
-@media all and (max-width:767px) { 
-	.container-hero { height: 450px }
-	.container-hero h1 { 
-		margin-top: 18%;
-		margin-bottom: 5%;
-	}
-	.container-hero h2 { 
-		width: 90%;
-		margin: 0 auto 5% auto
-	}
-}
-
-
-/* =============== FONT =============== */
-
-body { 	font-family: 'Neucha', sans-serif }
-
-
-/* =========== SECTION BLOCK CONTAINERS =========== */
-
-/* Desktops */
-@media all and (min-width:768px) { 
-	.container-block {padding: 4% 12% 4% 12% }
-}
-
-/* Mobiles */
-@media all and (max-width:767px) { 
-	.container-block { padding: 12% 8% 12% 8% }
-}
-
-/* Section block background colors */
-.bg-watermelon { background-color: #FBBDD9 }
-.bg-apple      { background-color: #B7F3D9 }
-.bg-blueberry  { background-color: #8C6BBE }
-.bg-lemon      { background-color: #F1F1BC }
-
-/* ============== INTRODUCTION TEXT ============ */
-
-h2 {
-	font-size: calc(26px + (54 - 26) * ((100vw - 320px) / (1600 - 320)));
-	color: #733fc0;
-	text-align: center; 
-	line-height: 1.6;    
-}
-
-/* ==== FLEXBOX: PARENT AND CHILD ELEMENTS ==== */
-
+/* =========================== PARENT FLEXBOX CONTAINERS ====================== */
 .container-flexbox { 
-	display: flex; 
-	justify-content: space-between; 
-	flex-wrap: wrap
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
-/* Desktops: 2 columns */
-@media all and (min-width:768px) { 
-	.item-col-2 { width: 47% }
+/* Desktops only - inside padding  */
+@media all and (min-width:768px) {
+	.container-flexbox { padding: 2% 10% 1% 10% } 
 }
 
-/* Mobiles: 1 column */
-@media all and (max-width:767px) { 
-	.item-col-2 { width: 100% }
+/* Mobiles only - inside padding */
+@media all and (max-width:767px) {
+	.container-flexbox { padding: 7% 8% 1% 8% } 
+
 }
 
-/* ======= CONTENT INSIDE FLEXBOX CHILD COLUMNS ======= */
+/* Background colors */
+.container-flexbox.bg-light-gray { background-color: #f5f5f5 }
+.container-flexbox.bg-green      { background-color: #5ba745 }
 
-/* Sub-headings  */
-h3 {
-	font-size: calc(32px + (64 - 32) * ((100vw - 320px) / (1600 - 320)));
-  	color: #d1274b; 
-  	letter-spacing: 2px; 
-  	margin-bottom: 4px; 
+.container-flexbox.hero-block {background-color: #fff;}
+
+/* Hero block height and spacing  */
+@media all and (min-width: 768px) {
+   .container-flexbox.hero-block { margin-top: 5% }
+   .container-flexbox.hero-block h1 { margin-top: 5% }
+
+   .container-flexbox.hero-block .item-2:nth-child(2) { 
+      display: flex;
+      flex-direction: column;
+      justify-content: center
+   }
 }
 
-/* Text paragraphs */
-p { 
-	font-size: calc(16px + (24 - 16) * ((100vw - 320px) / (1600 - 320)));
-  	color: #2F4F4F; 
-  	letter-spacing: 1px; 
-  	line-height: 1.6; 
-}
-
-/* Sub Heading, Paragraph text against a dark background  */
-.bg-blueberry h3, .bg-blueberry p  { color: #fff; }
-
-/* Centre-align sub-headings and paragraphs on mobiles  */
-@media all and (max-width:767px) { 
-	h3, p { text-align: center }
-}
-  
-/* Mobiles: Re-order columns inside first and third flexbox parent containers */ 
 @media all and (max-width: 767px) {
-	.bg-watermelon .item-col-2:nth-child(1) { order: 2; }
-	.bg-watermelon .item-col-2:nth-child(2) { order: 1; }
-	.bg-blueberry  .item-col-2:nth-child(1) { order: 2; }
-	.bg-blueberry  .item-col-2:nth-child(2) { order: 1; }
-  }
+   .container-flexbox.hero-block { margin-top: 10% }
+   .container-flexbox.hero-block .item-2:nth-child(2) { padding-bottom: 5% }
+}
+
+/* == CTA button == */
+.container-flexbox.hero-block a {
+	display: inline-block;
+	text-decoration: none;
+	padding: 12px 42px;
+	border-style: solid;
+	border-width: 4px;
+	margin: 32px 0;
+	border-radius: 50px;
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+ }
+ 
+ .container-flexbox.hero-block a:link,
+ .container-flexbox.hero-block a:visited {
+	color: #5ba745;
+	background-color: #fff;
+	border-color: #5ba745
+ }
+ 
+ .container-flexbox.hero-block a:hover,
+ .container-flexbox.hero-block a:active {
+	color: #fff;
+	background-color: #5ba745;
+	border-color: #5ba745
+ }
 
 
-/* =============== BEGIN EMAIL SIGN UP FORM ============= */
+/* ========================= FLEXBOX ITEM COLUMNS: 1 ITEM COLUMN EVERY SCREEN ==================== */
+.container-flexbox .item-1 { 
+	width: 100%;
+	padding: 1% 6% 0% 6%;
+}
+
+
+/* ================ FLEXBOX ITEM COLUMNS: 2 COLUMNS ON DESKTOPS, 1 COLUMN ON MOBILES ============== */
+/* For 'hero' section at top of web page */
+/* Desktops - 2 columns */
+@media all and (min-width:768px) { 
+	.container-flexbox .item-2 { 
+		width: 45%;
+		padding: 3% 0% 4% 0%;
+	}
+}
+
+/* Mobiles - 1 column */
+@media all and (max-width:767px) { 
+	.container-flexbox .item-2 {
+		text-align: center; 
+		width: 100%;
+		padding: 10% 10% 10% 10%;
+		margin-bottom: 14%;
+	}
+
+.container-flexbox .item-2:nth-child(1) {order: 2 }
+.container-flexbox .item-2:nth-child(2) {order: 1 }
+}
+
+/* ================ FLEXBOX ITEM COLUMNS: 3 COLUMNS ON DESKTOPS, 1 COLUMN ON MOBILES =============== */
+/* Desktops - 3 columns */
+@media all and (min-width:768px) { 
+	.container-flexbox .item-3 { 
+		width: 30%;
+		text-align: left;
+		padding: 3%;
+		margin-bottom: 7%;
+	}
+	.container-flexbox .item-3.smaller-margin-bottom { 
+		margin-bottom: 2%;
+	}
+}
+
+/* Mobiles - 1 column */
+@media all and (max-width:767px) { 
+	.container-flexbox .item-3 { 
+		width: 100%;
+		text-align: center;
+		padding: 10%;
+		margin-bottom: 14%;
+	}
+}
+
+/* ====================================== HEADINGS, PARAGRAPHS, IMAGES ================================== */
+/* Single column item-1 */
+.container-flexbox .item-1 h2 { 
+	font-weight: 900; 
+	color: #5ba745;
+	line-height: 1.2;
+	margin-bottom: 12px;
+	letter-spacing: -1px;
+	text-align: center;
+	font-size: calc(30px + (64 - 30) * ((100vw - 320px) / (1600 - 320))); 
+}
+
+.container-flexbox .item-1 p { 
+	font-weight: 400; 
+	line-height: 2;
+	letter-spacing: 1px;
+	text-align: center;
+	font-size: calc(16px + (22 - 16) * ((100vw - 320px) / (1600 - 320))); 
+	color: #000
+}
+
+.container-flexbox.bg-green .item-1 p.big-text {
+	font-size: calc(20px + (26 - 20) * ((100vw - 320px) / (1600 - 320))); 
+	margin-bottom:20px;
+	font-weight: 500;
+}
+
+.container-flexbox.bg-green .item-1 p.big-text,
+.container-flexbox.bg-green .item-1 p.big-text a {
+	color: #fff;
+}
+
+.container-flexbox.bg-green .item-1 p.big-text a {
+	text-decoration: none;
+	color: #fff;
+	border-bottom: solid 2px #fff;
+	padding-bottom:3px;
+}
+
+.container-flexbox.bg-green .item-1 p.big-text a:hover,
+.container-flexbox.bg-green .item-1 p.big-text a:active {
+	text-decoration: none;
+	color: #fff;
+	border-bottom: solid 2px #5ba745;
+	padding-bottom:3p;
+}
+
+@media all and (max-width:767px) { 
+	.container-flexbox.bg-green .item-1 img { 
+		margin-bottom: 24px
+	}
+}
+
+/* Two columns item-2 */
+.container-flexbox .item-2 h1 { 
+	font-weight: 900; 
+	color: #000;
+	line-height: 1.1;
+	margin-bottom: 12px;
+	letter-spacing: -1px;
+	margin-bottom: 20px;
+	font-size: calc(30px + (60 - 30) * ((100vw - 320px) / (1600 - 320))); 
+}
+
+.container-flexbox .item-2 p { 
+	font-weight: 500; 
+	color: gray;
+	line-height: 1.3;
+	font-size: calc(18px + (32 - 18) * ((100vw - 320px) / (1600 - 320))); 
+}
+
+/* Three columns item-3 */
+.container-flexbox .item-3 { 
+	background-color: #fff;
+	box-shadow: rgba(160,160,160,0.8) 5px 5px 20px;
+	border-radius: 12px;
+}
+
+.container-flexbox img { 
+	margin-bottom: 12px;
+	border-radius: 5px;
+}
+
+.container-flexbox.happy-users .item-3 { 
+	text-align: center;
+	margin-top: 3%;
+	padding-bottom: 2%;
+}
+
+.container-flexbox.happy-users img { 
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+	border-radius: 100%;
+}
+
+.container-flexbox .item-3 h3 { 
+	font-weight: 500; 
+	color: #000;
+	line-height: 1.2;
+	margin-bottom: 2px;
+	font-size: calc(20px + (24 - 20) * ((100vw - 320px) / (1600 - 320))); 
+}
+
+.container-flexbox .item-3 p { 
+	font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1600 - 320))); 
+	line-height: 1.5;
+	margin-bottom: 14px;
+	color: rgb(82, 95, 127);
+}
+
+.slide-in-left {
+    animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ----------------------------------------------
+*/
+
+.scale-up-center {
+    animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@keyframes scale-up-center {
+	0% {
+		transform: scale(0.5);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+
+/* =============== BEGIN EMAIL SIGN UP FORM CSS ============= */
 
 /* == Email signup form container == */
 
 /* All screens */
-.container-form-email-signup  { text-align: center; background-color: #fff; }
+.container-form-email-signup  { 
+	text-align: center; 
+	background-color: #5ba745; 
+}
 
 /* Desktop */
 @media all and (min-width:1024px) { 
@@ -611,25 +745,24 @@ p {
 
 /* Heading */
 .container-form-email-signup h3 { 
-	font-family: 'Neucha', sans-serif;
 	font-weight: bold; 
-	color: #733fc0;
+	color: #fff;
 	line-height: 1.2;
 	margin-bottom: 3%;
-	font-size: calc(32px + (84 - 32) * ((100vw - 320px) / (1600 - 320))); 
+	font-size: calc(26px + (56 - 26) * ((100vw - 320px) / (1600 - 320))); 
 }
 
 /* Text */
 .container-form-email-signup p { 
-	font-family: 'Neucha', sans-serif;
     font-weight: normal;
-    color: #733fc0; 
+    color: #fff; 
     line-height: 1.5;
     margin-bottom: 7%;    
-	font-size: calc(20px + (32 - 20) * ((100vw - 320px) / (1600 - 320))); 
+	font-size: calc(16px + (22 - 16) * ((100vw - 320px) / (1600 - 320))); 
 }
 
 /* == Email sign up form fields == */
+
 #email-signup-form .flex-row {
 	display: flex;
 	justify-content: space-between;
@@ -657,7 +790,7 @@ p {
     border-radius: 5px;
 }
 
-#email-signup-form label { padding: 14px 0 }
+#email-signup-form label { padding: 14px 0; color: #fff;}
 
 #email-signup-form label,
 #email-signup-form #btn-submit { font-weight: bold }
@@ -670,7 +803,7 @@ p {
 #email-signup-form input {
 	background-color: #f0f0f0;
 	padding: 10px 12px;
-	border: 2px solid #d1274b;
+	border: 2px solid gray;
 }
 
 #email-signup-form input:focus { 
@@ -679,15 +812,19 @@ p {
 
 #email-signup-form #btn-submit {
 	color: #fff;
-   	border: none;
-   	padding: 12px 22px;
-   	background-color: #d1274b;
-   	border-radius: 50px;
-}
-
-#email-signup-form #btn-submit:hover {
-	background-color: #733fc0;
-}
+	border: solid 2px #fff;
+	padding: 12px 22px;
+	background-color: #fff;
+	letter-spacing: 1px;
+	border-radius: 50px;
+	color: #5ba745;
+ }
+ 
+ #email-signup-form #btn-submit:hover {
+	color: #fff;
+	background-color: #5ba745;
+	border: solid 2px #fff
+ }
 
 #email-signup-form #btn-submit i {
 	margin-left: 8px
@@ -700,151 +837,93 @@ p {
 	#email-signup-form #btn-submit { margin: 30px auto 0 auto; width: 80% }
 }
 
-/* =============== END EMAIL SIGN UP FORM ============= */
+/* =============== END EMAIL SIGN UP FORM CSS ============= */
 /* == Begin footer CSS == */
 /* Outer footer parent container */
 .container-footer { 
-    text-align: center;
-    color:#fff;
-    background-color:#d1274b;
+	display: flex;
+	justify-content: space-between;
+   flex-wrap: wrap;
+   background-color: #5ba745
 }
 
 /* Desktop footer - inside padding  */
 @media all and (min-width:768px) {
-	.container-footer { padding: 4% 8% 5% 8% }
+	.container-footer { padding: 3% 8% 3% 8% }
 }
 
 /* Mobiles footer - inside padding */
 @media all and (max-width:767px) {
-	.container-footer { padding: 8% 8% 12% 8% }
+	.container-footer { padding: 12% 8% 1% 8% }
+}
+
+/* Inner footer columns */
+
+/* Desktops - 3 columns */
+@media all and (min-width:768px) { 
+   .container-footer .item-3:nth-child(1) { width: 20% }
+   .container-footer .item-3:nth-child(2) { 
+      width: 50%;
+      /* text-align: center */
+   }
+   .container-footer .item-3:nth-child(3) { 
+      width: 20%;
+   }
+}
+
+/* Mobiles - 1 column */
+@media all and (max-width:767px) { 
+	.container-footer .item-3 { 
+      width: 100%;
+      margin-bottom: 10%
+   }
+   .container-footer .item-3:nth-child(2) { order: 1 }
+   .container-footer .item-3:nth-child(1) { order: 2 }
+   .container-footer .item-3:nth-child(3) { order: 3 } 
 }
 
 /* Styles for footer background, text, icons and links */
 
-.container-footer h4,
-.container-footer h5,
-.container-footer ul li,
-.container-footer ul li a,
-.container-footer p,
-.container-footer p a {
+.container-footer .item-3 h4,
+.container-footer .item-3 p,
+.container-footer .item-3 p i,
+.container-footer .item-3 p a {
    color: #fff
 }
 
-/* Footer headings */
-.container-footer h4 {
-   font-family: serif;
+.container-footer .item-3 h4 {
+   font-weight: bold;
+   /* text-transform: uppercase */
+   margin-bottom: 12px;
+   font-size: calc(17px + (19 - 17) * ((100vw - 320px)/(1600 - 320)));
+}
+
+.container-footer .item-3 p {
    font-weight: normal;
-   font-style: italic;
-   font-size: calc(26px + (48 - 26) * ((100vw - 320px)/(1600 - 320)));
-   margin: 0 auto 16px 0;
+   margin-bottom: 12px;
+   font-size: calc(15px + (18 - 15) * ((100vw - 320px)/(1600 - 320)));
+   line-height: 1.6
 }
 
-.container-footer h5 {
-    font-family: sans-serif;
-    font-weight: normal;
-    font-style:  italic;
-    color: #8d9093;
-    margin: 0 auto 36px auto;
-    font-size: calc(20px + (32 - 20) * ((100vw - 320px)/(1600 - 320)));
+.container-footer .item-3 i { 
+   padding-right: 26px;
+} 
+
+.container-footer .item-3 p a {
+   text-decoration: none;
+   border-bottom-style: solid;
+   border-bottom-width: 2px;
+   padding-bottom:2px;
 }
 
-/* Footer text links and icon links */
-.container-footer ul.footer-links,
-.container-footer ul.footer-icons {
-    list-style-type: none;
-}
-
-.container-footer ul.footer-links {
-    margin: 0 auto 48px auto;
-}
-
-.container-footer ul.footer-icons {
-    margin: 0 auto 48px auto;
-}
-
-.container-footer ul.footer-links li,
-.container-footer ul.footer-icons li {
-    display: inline-block;
-    margin: 0 32px 0 0;
-}
-
-.container-footer ul.footer-links li:last-child,
-.container-footer ul.footer-icons li:last-child {
-    margin-right: 0;
-}
-
-/* Footer text links */
-.container-footer ul.footer-links li a {
-    text-decoration: none;
-    border-bottom-style: solid;
-    border-bottom-width: 2px;
-    padding-bottom:2px;    
-    font-size: calc(17px + (20 - 17) * ((100vw - 320px)/(1600 - 320)));
-}
-
-.container-footer ul.footer-links li a:link, 
-.container-footer ul.footer-links li a:visited  {
+.container-footer .item-3 p a:link, 
+.container-footer .item-3 p a:visited  {
    border-bottom-color: transparent;
 }
 
-.container-footer ul.footer-links li a:hover, 
-.container-footer ul.footer-links li a:active  {
+.container-footer .item-3 p a:hover, 
+.container-footer .item-3 p a:active  {
    border-bottom-color: #fff
-}
-
-/* Footer icons */
-.container-footer ul.footer-icons li a i {
-    text-decoration: none;
-    font-size: calc(22px + (28 - 22) * ((100vw - 320px)/(1600 - 320)));
-}
-
-.container-footer ul.footer-icons li a:hover, 
-.container-footer ul.footer-icons li a:active  {
-   color: #fff
-}
-
-/* Privacy and legal link */
-.container-footer p a {
-    text-decoration: none;
-    border-bottom-style: solid;
-    border-bottom-width: 2px;
-    padding-bottom:2px;    
-    font-size: calc(15px + (18 - 15) * ((100vw - 320px)/(1600 - 320)));
-}
-
-.container-footer p a:link, 
-.container-footer p a:visited  {
-   border-bottom-color: transparent;
-}
-
-.container-footer p a:hover, 
-.container-footer p a:active  {
-   border-bottom-color: #fff
-}
-
-a.privacy-legal {
-    font-family: sans-serif;    
-    display: inline-block;
-    color:#fff;
-    text-decoration: none;
-    border-bottom-style: solid;
-    border-bottom-width: 2px;
-    padding-bottom:2px;    
-    font-size: calc(14px + (17 - 14) * ((100vw - 320px)/(1600 - 320)));
-}
-
-a.privacy-legal:link,
-a.privacy-legal:visited {
-    border-bottom-color: transparent;
-}
-
-a.privacy-legal:active,
-a.privacy-legal:hover {
-    border-bottom-color: #fff
 }
 
 /* == End footer CSS == */
-
-
-
-
