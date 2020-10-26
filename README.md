@@ -5,18 +5,18 @@ Hello! Welcome to my IBAT Portfolio. This project was made to complete the Web D
 ## Methods learned
 Below are some of the things that IBAT had covered.
 
--Working with Web Browsers (Dev Tools)
--Web Hosting Through Github
--Responsive Web Design
--Designing with CSS (Flexbox)
--Introduction to Fluid Typography
--Menus and Privacy
--Working with Hyperlinks, Buttons and Icons 
+- Working with Web Browsers (Dev Tools)
+- Web Hosting Through Github
+- Responsive Web Design
+- Designing with CSS (Flexbox)
+- Introduction to Fluid Typography
+- Menus and Privacy
+- Working with Hyperlinks, Buttons and Icons 
 
 ## Technologies
 This project was built using the below tools.
 
--Visual Studio Code
--Firefox Developer tools
--Site uses HTML, CSS and JavaScript files
--Jquerey
+- Visual Studio Code
+- Firefox Developer tools
+- Site uses HTML, CSS and JavaScript files
+- Jquerey
