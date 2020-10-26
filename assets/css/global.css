@@ -436,7 +436,6 @@ a[href^=tel] { text-decoration: none; color: #fff }
 	color: #1d1d21;
     font-size: calc(60px + (110 - 60) * ((100vw - 320px)/(1600 - 320)));
     letter-spacing: -0.01em;
-    z-index: 9999;
 }
 
 .container-hero-block h2 {
@@ -555,9 +554,13 @@ a.fancy-link:hover, a.fancy-link:active { color: #fbc290; border-bottom-color: #
 /* ============ PARENT FLEXBOX CONTAINERS ========== */
 
 .container-flexbox { 
-	display: flex;
+    display: flex;
+    background-color: #1d1d21;
 	justify-content: space-between;
-	flex-wrap: wrap;
+    flex-wrap: wrap;
+    z-index: 10;
+    position: relative;
+    
 }
 
 .container-flexbox.on-top { 
@@ -1051,7 +1054,7 @@ a.privacy-legal:hover {
     width: 45%;
     margin: auto;
     top: 25px;
-    z-index: 999;
+    z-index: 0;
     transition: all 0.8s ease;
     transform: skew(-2deg, -2deg);
 }
