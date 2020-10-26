@@ -4,6 +4,7 @@ Hello! Welcome to my IBAT Portfolio. This project was made to complete the Web D
 
 ## Methods learned
 Below are some of the things that IBAT had covered:
+
 *Working with Web Browsers (Dev Tools)
 *Web Hosting Through Github
 *Responsive Web Design
@@ -14,6 +15,7 @@ Below are some of the things that IBAT had covered:
 
 ## Technologies
 This project was built using the below tools:
+
 *Visual Studio Code
 *Firefox Developer tools
 *Site uses HTML, CSS and JavaScript files
