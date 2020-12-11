@@ -450,9 +450,15 @@ a[href^=tel] { text-decoration: none; color: #fff }
 	.container-hero-block { height: 100% }
 	.container-hero-block h1, .container-hero-block h2 { 
 		width: 90%; 
-	}
+    }
+    
     .container-hero-block h1 {margin-top: 8%;  margin-bottom: 0% }
-    .container-hero-block.portfolio-page h1 {margin-bottom: -12% }
+
+    .container-hero-block.portfolio-page h1 {
+        margin-bottom: -12%; 
+        position: relative;
+        z-index: 15;
+    }
 }
 
 /* Mobiles - block height, text width and h1 bottom margin */
@@ -462,7 +468,11 @@ a[href^=tel] { text-decoration: none; color: #fff }
 		width: 90%; 
 	}
     .container-hero-block h1 { margin-top: 18%; margin-bottom: 5% }
-    .container-hero-block.portfolio-page h1 {margin-bottom: -10% }
+    .container-hero-block.portfolio-page h1 {
+        margin-bottom: -10%; 
+        position: relative;
+        z-index: 15;
+    }
 }
 
 
